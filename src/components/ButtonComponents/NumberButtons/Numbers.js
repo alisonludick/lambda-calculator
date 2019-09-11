@@ -3,7 +3,6 @@ import NumberButton from './NumberButton';
 //import any components needed
 
 //Import your array data to from the provided data file
-
 import { numbers } from '../../../data'; 
 console.log(numbers); 
 
@@ -24,4 +23,5 @@ const Numbers = () => {
     </div>
   );
 };
+
 export default Numbers; 

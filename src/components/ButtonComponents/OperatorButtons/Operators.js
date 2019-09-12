@@ -14,7 +14,7 @@ const Operators = () => {
     <div>
       {operatorState.map((operator) => {
         return(
-          <OperatorButton operator={operator} key={operator}/>
+          <OperatorButton operator={operator} key={operator.char}/>
         )
       })
         /* STEP 3 - Use .map() to iterate over your array data and return a button

@@ -1,0 +1,9 @@
+.lightblue {
+    background-color: #2a7292;
+    width: 100%;
+    max-width: 40px;
+    border-radius: 100px;
+    border: 2px solid grey;
+    padding: 25px;
+    margin: 15px; 
+}

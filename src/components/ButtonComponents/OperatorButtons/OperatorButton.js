@@ -1,13 +1,23 @@
 import React from "react";
-import "./operator.css";
 
-const OperatorButton = ({operator}) => {
+const OperatorButton = ({ setDisplay, value, character, display }) => {
+  function operatorControl() {
+    if (character === "+" || "-" || "x" || "/") return setDisplay(display + value);
+  }
+
+  function calculationControl() {
+    if (value === "=") return setDisplay(eval(display));
+  }
+
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-      <div className="midblue">{operator.char}</div>
-    </>
+      <div
+        className="operator-button"
+        value={value}
+        onClick={() => operatorControl() || calculationControl()}
+      >
+        {character}
+      </div>
   );
 };
 
-export default OperatorButton; 
+export default OperatorButton;
